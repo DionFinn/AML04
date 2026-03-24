@@ -1,0 +1,58 @@
+Use the Intel Image Classification dataset.
+https://www.kaggle.com/datasets/puneet6060/intel-image-classification
+The dataset contains natural scene images belonging to six classes:
+• buildings
+• forest
+• glacier
+• mountain
+• sea
+• street
+Use the seg_train and seg_test folders. The seg_pred folder is not required.
+Use the seg_train dataset for training. Split it into training (80%) and validation (20%) sets.
+After training the model, evaluate its performance using the seg_test dataset.
+1. Dataset Preparation
+Prepare the dataset, including:
+1. Load the dataset.
+2. Resize images to 150 × 150 if they are not already 150 × 150.
+3. Normalize pixel values to [0,1].
+4. Split the seg_train dataset into training and validation datasets.
+Display several example images from the dataset and report:
+• Number of training samples
+• Number of validation samples
+• Number of test samples
+• Number of classes
+2. Build a CNN Model
+Build a Convolutional Neural Network. The network must include at least:
+• 1 Conv2D layer
+• 1 MaxPooling layer
+• 1 Flatten layer
+• 1 Dense layer
+Train the model. Report the test accuracy on the seg_test dataset.
+Internal
+3. Modify the CNN Architecture
+Modify the CNN architecture. For example, you may:
+• Add additional Conv2D layers
+• Add additional MaxPooling layers
+• Change the number of filters
+Train the model. Report the test accuracy on the seg_test dataset.
+4. Data Augmentation
+Apply data augmentation to the training dataset only. For example:
+• horizontal flip
+• rotation
+• zoom
+• brightness adjustment
+Train the model. Report the test accuracy on the seg_test dataset.
+5. Regularization
+Apply regularization techniques such as Dropout layers or EarlyStopping during training. Train the
+model. Report the test accuracy on the seg_test dataset.
+6. Report
+Create a short report (1 page) including:
+1. Model architecture diagrams
+2. Training settings (e.g., epochs, optimizer, loss function)
+3. Data augmentation methods used
+4. Regularization methods used
+5. Compare the test accuracy of the models in Tasks 2–5.
+Submission
+Submit your source code and report to Canvas and demonstrate your work to the tutor during the
+lab session.
+
